@@ -2,7 +2,19 @@
 	name = Denis Yakovenko
 	email = yakovenko.denis.a@gmail.com
 [color]
-	ui = true    
+	ui = true
+[color "diff"]
+    meta = "yellow bold"
+    commit = "green bold"
+    frag = "magenta bold"
+    old = "red bold"
+    new = "green bold"
+    whitespace = "red reverse"
+[color "diff-highlight"]
+    oldNormal = "red bold"
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
 [alias]
     lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
