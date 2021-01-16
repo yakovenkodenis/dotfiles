@@ -1,0 +1,45 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+          }
+        },
+        "react": {
+            "version": "detect"
+        }
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "react-hooks"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
+        "prettier/prettier": ["error", { "singleQuote": true, "trailingComma": "all" }],
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "react/display-name": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/no-onchange": "off"
+    }
+}
